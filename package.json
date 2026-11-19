@@ -1,0 +1,35 @@
+{
+  "name": "mundo-dos-pokemons",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Mundo dos Pokémons: galeria, favoritos, detalhes e comparação (HTML, CSS e JavaScript puros).",
+  "type": "module",
+  "scripts": {
+    "dev": "node -e \"console.log('\\n  Site no ar: http://localhost:8080\\n  Para parar: Ctrl+C\\n')\" && http-server . -p 8080 -c-1 -s",
+    "lint:html": "html-validate index.html galeria.html arena.html favoritos.html 404.html",
+    "lint:css": "stylelint style.css",
+    "lint:js": "eslint .",
+    "test": "node --test \"testes/*.test.mjs\"",
+    "teste:a11y": "start-server-and-test devhttp://localhost:8080 pa11y-ci",
+    "teste:lighthouse": "lhci autorun",
+    "verificar:projeto": "node scripts/verificar-projeto.mjs",
+    "url": "node scripts/definir-url.mjs",
+    "vendor": "node scripts/copiar-vendor.mjs",
+    "verificar": "npm run lint:html && npm run lint:css && npm run lint:js && npm run test && npm run verificar:projeto && npm run teste:a11y"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@lhci/cli": "^0.16.1",
+    "esbuild": "^0.28.2",
+    "eslint": "^10.14.0",
+    "globals": "^17.14.0",
+    "gsap": "^3.15.1",
+    "html-validate": "^11.21.1",
+    "http-server": "^14.1.1",
+    "lenis": "^1.3.27",
+    "pa11y-ci": "^5.0.0",
+    "start-server-and-test": "^3.0.13",
+    "stylelint": "^18.0.0",
+    "stylelint-config-standard": "^41.0.0"
+  }
+}
