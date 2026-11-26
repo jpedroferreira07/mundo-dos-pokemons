@@ -1,6 +1,9 @@
 # Mundo dos Pokémons
 
-Site com três páginas (Início, Galeria e Favoritos) feito com HTML, CSS e JavaScript puros, usando a [PokeAPI](https://pokeapi.co/). Nasceu como trabalho da AP2 de desenvolvimento web e foi evoluído depois: filtros, detalhes, comparação, animações e um pipeline de qualidade.
+Site com três páginas (Início, Galeria e Favoritos) feito com HTML, CSS e JavaScript puros, usando a [PokeAPI](https://pokeapi.co/). Nasceu como trabalho da AP2 de Desenvolvimento Web e foi evoluído depois: filtros, detalhes, comparação, animações e um pipeline de qualidade.
+
+## Publicação
+- Link do site publicado: https://jpedroferreira07.github.io/mundo-dos-pokemons/
 
 ## O que o site faz
 
@@ -36,12 +39,6 @@ Depois abra http://localhost:8080.
 | `npm run verificar` | lint + testes + verificações + pa11y |
 | `npm run vendor` | copia e minifica GSAP e Lenis do `node_modules` para `js/vendor/` (rode depois de atualizá-los) |
 
-O pa11y e o Lighthouse precisam de um Chrome/Edge. No Windows, se não encontrarem sozinhos, defina antes `CHROME_PATH` (e `PUPPETEER_EXECUTABLE_PATH`) com o caminho do `chrome.exe`.
-
-Os workflows em `.github/workflows/` já estão prontos: quando o projeto for para o GitHub, `ci.yml` roda tudo isso a cada push e pull request, e `pages.yml` publica o site no GitHub Pages.
-
-> O Lighthouse local pode acusar `robots.txt` como inválido por causa do CSP da página. É um falso positivo da ferramenta: o arquivo existe e é válido.
-
 ## Segurança
 
 - CSP por `<meta>` (scripts, estilos e conexões só do próprio site e da PokeAPI) e `referrer` restrito.
@@ -52,16 +49,6 @@ Os workflows em `.github/workflows/` já estão prontos: quando o projeto for pa
 ## Acessibilidade e SEO
 
 `aria-current`, avisos em região live, botões com `aria-pressed`, foco gerenciado em diálogos e remoções, alvos de toque de 44px, `<noscript>` e contraste AA. Canonical, Open Graph, Twitter Cards, JSON-LD, `robots.txt`, `sitemap.xml` e página 404.
-
-## Se for publicar um dia
-
-As URLs de canonical, sitemap e `robots.txt` usam o texto provisório `jpedroferreira07`. Quando houver repositório, troque tudo de uma vez:
-
-```bash
-npm run url -- seu-usuario
-```
-
-Depois, em Settings > Pages do repositório, escolha "Source: GitHub Actions".
 
 ## Estrutura
 
@@ -75,6 +62,6 @@ testes/      testes unitários (node:test)
 .github/     workflows (CI e publicação no Pages)
 ```
 
-## Autor
+## Créditos
 
-João Pedro Ferreira.
+Desenvolvido por João Pedro Ferreira, com apoio do Claude no código e na revisão.
