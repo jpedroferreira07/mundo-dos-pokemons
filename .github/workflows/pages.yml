@@ -35,7 +35,7 @@ jobs:
           mkdir _site
           cp index.html galeria.html arena.html favoritos.html 404.html style.css robots.txt sitemap.xml _site/
           cp -r imagens js _site/
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: _site
       - id: deployment
