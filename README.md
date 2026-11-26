@@ -14,6 +14,15 @@ Site com três páginas (Início, Galeria e Favoritos) feito com HTML, CSS e Jav
 - **Favoritos** salvos no `localStorage` e sincronizados entre abas.
 - **Animações:** rolagem suave (Lenis), barra de progresso de leitura, título do hero que sobe palavra por palavra com fundo fluido em WebGL, seção "Como funciona" que acende e entra em sequência, números que contam, faixa de tipos que acelera com a rolagem, cards com inclinação 3D e botões magnéticos, Master Ball que fecha e abre na troca de página, botão de voltar ao topo (Master Ball que balança quando o mouse chega perto), captura na pokébola ao favoritar e cards holográficos (brilho dourado nos raros). Há um botão para pausar tudo, e `prefers-reduced-motion` é respeitado (nesses casos o GSAP e o Lenis nem são baixados).
 
+## Tecnologias
+
+- HTML5 
+- CSS3 
+- JavaScript puro (módulos ES, Web Animations API, Web Audio, WebGL)
+- GSAP e Lenis 
+- PokeAPI 
+- SVG inline
+
 ## Como rodar
 
 O site usa módulos ES, então precisa de um servidor local (abrir o arquivo direto no navegador não funciona).
