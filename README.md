@@ -38,7 +38,7 @@ Depois abra http://localhost:8080.
 
 O pa11y e o Lighthouse precisam de um Chrome/Edge. No Windows, se não encontrarem sozinhos, defina antes `CHROME_PATH` (e `PUPPETEER_EXECUTABLE_PATH`) com o caminho do `chrome.exe`.
 
-Os workflows em `.github/workflows/` já estão prontos: quando o projeto for para o GitHub, `ci.yml` roda tudo isso a cada push e pull request, e `pages.yml` publica o site no GitHub Pages. O Dependabot abre PRs semanais de atualização.
+Os workflows em `.github/workflows/` já estão prontos: quando o projeto for para o GitHub, `ci.yml` roda tudo isso a cada push e pull request, e `pages.yml` publica o site no GitHub Pages.
 
 > O Lighthouse local pode acusar `robots.txt` como inválido por causa do CSP da página. É um falso positivo da ferramenta: o arquivo existe e é válido.
 
@@ -72,7 +72,7 @@ js/          módulos ES (api, dados, cartas, filtros, galeria, detalhes, compar
 imagens/
 scripts/     verificar-projeto.mjs, definir-url.mjs
 testes/      testes unitários (node:test)
-.github/     workflows e dependabot
+.github/     workflows (CI e publicação no Pages)
 ```
 
 ## Autor
